@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Rhyming Word Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<script  src="./index.js" defer></script>
+</head>
+<body>
+<div class="wrapper">
+  <h1>Rhyming Words</h1>
+  <form class="form__contact">
+    <fieldset>
+      <p>This is a rhyming word generator! </p>
+      <p>Type in a colour you would like to see the rhyming words for: blue, green, yellow or orange.</p>
+      <p>My colour is <input class="form__field field--name" type="text" id="colourName" placeholder="Colour Name">and I would like to see a maximum of <input class="form__field field--name" type="text" id="wordNumber" placeholder="Enter a number of 1-5"> entries.</p>
+      <p>Press the button to see the results below!</p>
+      <button type="submit" class="button button--xlarge" tabindex="4" id="SubmitBtn">Generate Rhymes &#187;</button>
+    </fieldset>
+    <fieldset>
+      <p id="outputArea"></p>
+    </fieldset>
+  </form>
+</div>
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+  <defs>
+    <filter id="blur0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0 0" />
+    </filter>
+    <filter id="blur1">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0 5" />
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0 10" />
+    </filter>
+    <filter id="blur3">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0 15" />
+    </filter>
+    <filter id="blur4">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0 20" />
+    </filter>
+  </defs>
+</svg> 
+
+</body>
+</html>
