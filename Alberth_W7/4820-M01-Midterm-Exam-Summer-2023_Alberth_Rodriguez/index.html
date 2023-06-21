@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GALAXY 'ZA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="/js/index.js" defer></script>
+  </head>
+  <body>
+ 
+      <!-- PART ONE Name interpreter -->
+      <div class="signup-container part-one">
+        <div class="left-container">
+          <h1>
+            <i class="fa-solid fa-pizza-slice"></i>
+            GALAXY 'ZA!
+          </h1>
+          <div class="pizza">
+            <img src="./img/pizza-alien.png" />
+          </div>
+        </div>
+        <div class="right-container">
+          <header>
+            <h1>Pizza delivered to your door, anywhere in the universe!</h1>
+            <hr>
+            <h3>================  PART 1  ================ 
+              GALAXY 'ZA delivers to 4 planets: Saturn, Jupiter, Mars and Venus. Names are spelt a bit differently on different planets. Saturn has 'aa' instead of just 'a'; Jupiter only has 'oo' vowels, instead of 'a', 'e' and 'i'; Mars has no vowels and Venus has 'u' for 'a', 'e', and 'i'. </h3>
+            <h4>Example: 
+              <h5>
+                Saturn - Trista Townsend ===> Tristaa Townsend
+              </h5>
+              <h5>
+                Jupiter - Trista Townsend ===> Troostoo Townsoond
+              </h5>
+              <h5>
+                Mars - Trista Townsend ===> Trst Twnsnd
+              </h5>
+              <h5>
+                Venus - Trista Townsend ===> Trustu Tuwnsund
+              </h5>
+            </h4>
+            <h3>
+              Your task is to display the name that is typed into the input box to the output area in the webpage below, translated to the planet they have inputted. Make sure your output message is clear and easy to understand. 
+            </h3>
+            <div class="set">
+              <div class="pizza-name">
+                <label for="customerName">Name</label>
+                <input id="customerName" placeholder="Bob the Blob,eg." type="text" />
+              </div>
+            </div>
+            <div class="set">
+              <div class="planet-residence">
+                <label for="planetResidence">Planet of Residence</label>
+                <input id="planetResidence" placeholder="Jupiter, eg." type="text" />
+              </div>
+            </header>
+            <footer>
+              <div class="set">
+                <button id="nameSubmit">SUBMIT</button>
+              </div>
+              <div class="set" id="nameTranslate"></div>
+            </footer>
+          </div>
+        </div>
+
+        <!-- PART 2 Make your own pizza section -->
+      <div class="signup-container part-two">
+        <div class="left-container">
+          <h1>
+            <i class="fa-solid fa-pizza-slice"></i>
+            TOPPINGS
+          </h1>
+          <div class="pizza">
+            <img src="./img/pizza-logo.png" />
+          </div>
+        </div>
+        <div class="right-container">
+          <header>
+            <h1>Create Your Own Pizza</h1>
+            <h2>Every pizza has a base price of $10.99 which comes with tomato sauce and mozzerella cheese. All prices are in EHD or Earth Dollars.</h2>
+            <h2>Classic Toppings: $2.23 EHD</h2>
+            <ul>
+              <li>Mushrooms</li>
+              <li>Red Pepper</li>
+              <li>Blob Goo</li>
+              <li>Ground Mars Beef</li>
+              <li>Black Olives</li>
+              <li>Pineapple</li>
+            </ul>
+            <h2>Primium Toppings: $5.48 EHD</h2>
+            <ul>
+              <li>Anchovies</li>
+              <li>Space Slime</li>
+              <li>Feta Cheese</li>
+              <li>Spinach</li>
+              <li>Spicy Moon Dust</li>
+              <li>Oxygen dip</li>
+            </ul>
+            <hr>
+            <h3> ================  PART 2  ================ 
+              Customers order pizzas by making custom pies. Allow the customer to enter as many toppings as they would like. You will need to save their entries when they press the "add toppings" button. After each time the "add toppings" button is clicked, there needs to be a message in the output area letting the user know it was successful, and their updated total. 
+              The reset button will allow the user to erase all the entries and start again. When they click the reset button, a message appears in the output area telling them that their reset is successful.
+              </h3>
+            <div class="set">
+              <div class="topping">
+                <label for="topping">Topping</label>
+                <input id="topping" placeholder="Space Slime, eg." type="text" />
+              </div>
+          </header>
+          <footer>
+            <div class="set">
+              <button id="addTopping">Add Topping</button>
+              <button id="resetBtn">Reset</button>
+            </div>
+            <div class="set" id="toppingOutput"></div>
+          </footer>
+        </div>
+      </div>
+
+      <!-- PART 3 Order Summary -->
+      <div class="signup-container part-three">
+        <div class="left-container">
+          <h1>
+            <i class="fa-solid fa-pizza-slice"></i>
+            ORDER SUMMARY
+          </h1>
+          <div class="pizza">
+            <img src="./img/pizza-logo.png" />
+          </div>
+        </div>
+        <div class="right-container">
+          <header>
+            <h1>Your pizza, made to order. </h1>
+            <hr>
+            <h3>================  PART 3  ===================
+              <br>
+              Find the value of tax and driver tip, convert to the customer's currency, and display the bill summary. 
+              Delivery fees are as follows:
+             </h3>
+            
+             <ul>
+              <li>Venus: $3.98 EHD</li>
+              <li>Mars: $5.57 EHD</li>
+              <li>Jupiter: $59.19 EHD</li>
+              <li>Saturn: $120.43 EHD</li>
+             </ul>
+             <h3>Planetary Currency Conversion</h3>
+              <ul>
+                <li>Venus Dollars: $1 EHD = $0.91 VND</li>
+                <li>Mars Dollars: $1 EHD = $0.38 MSD</li>
+                <li>Jupiter Dollars: $1 EHD = $2.34 JTD</li>
+                <li>Saturn Dollars: $1 EHD = $1.06 SRD</li>
+              </ul>
+            <h3>
+              Your task is to display the following information to the customer in the output area, in the form of a list:
+              <h4>
+                Subtotal (total cost of the pizza before tax and tip), 
+              </h4>
+              <h4>
+                Tax amount, 
+              </h4>
+              <h4>
+                Tip amount, 
+              </h4>
+              <h4>
+                Delivery cost, 
+              </h4>
+              <h4>
+                Total in EHD, 
+              </h4>
+              <h4>
+                Total in the person's home planet dollars. 
+              </h4>
+            </h3>
+            <h3>===========  BONUS  ===========
+              <br>
+              ***** NOTE: THIS SECTION CAN ONLY BE COMPLETED AFTER THE REST OF THE EXAM IS FULLY FILLED OUT. OTHERWISE, IT WILL NOT COUNT TOWARDS YOUR FINAL SCORE. ******
+              <br>
+              The delivery time for a pizza is 60 minutes on earth. Find and add to the summary how many minutes the customer will be waiting, relative to 60 earth minutes, on their home planet. 
+             </h3>
+      <div class="set">
+        <div class="tax-percent">
+          <label for="taxPercentId">Tax Percent</label>
+          <input id="taxPercentId" placeholder="10, eg." type="text" />
+        </div>
+      </div>
+      <div class="set">
+        <div class="tip-percent">
+          <label for="tipPercentId">Tip Percent</label>
+          <input id="tipPercentId" placeholder="20, eg." type="text" />
+        </div>
+      </header>
+      <footer>
+        <div class="set">
+          <button id="calcBill">Calculate Bill</button>
+        </div>
+        <div class="set" id="billSummary"></div>
+      </footer>
+    </div>
+  </div>
+  </body>
+</html>
