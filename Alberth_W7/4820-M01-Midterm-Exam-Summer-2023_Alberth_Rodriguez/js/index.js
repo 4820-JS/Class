@@ -19,8 +19,6 @@ nameSubmit.addEventListener("click", function(e){
         one = planet
         if (planet === "Saturn"){//Check if is saturn
             console.log((name.replace('A', 'AA').replace('a', 'aa')))
-            // outputArea.innerHTML = `Not a Number`//message
-            // amount.value = ``//empty the box
         }if (planet === "Jupiter"){//Check if is Jupiter
             nameTranslate.innerHTML =  (name.replace(/[A,E,I]/g, 'OO').replace(/[a,e,i]/g, 'oo'))
         }if (planet === "Venus"){//Check if is Venus
